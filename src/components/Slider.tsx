@@ -20,41 +20,41 @@ function Slider() {
             <span className={`text-[#F9C578] text-md md:text-3xl ${pd.className}`}>(Langages, Plateformes, ...)</span>
         </div>
 
-        <div className='bg-[#14787c] h-[8vh] md:h-[15vh] w-[85vw] flex items-center justify-between mt-[2vh] md:mt-[5vh] rounded-full px-5 md:px-10'>
+        <div className='bg-[#14787c] h-[8vh] md:h-[15vh] w-[85vw] flex items-center justify-between mt-[2vh] md:mt-[5vh] rounded-full px-5 sm:px-10 xl:px-20'>
             <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
             >
-                <IoLogoWordpress className="h-5 w-5 md:h-14 md:w-14 text-[#F9C578]" />
+                <IoLogoWordpress className="h-5 w-5 md:h-14 md:w-14 xl:h-16 xl:w-16 text-[#F9C578]" />
             </motion.div>
             <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
             >
-                <SiWebflow className="h-5 w-5 md:h-14 md:w-14 text-[#F9C578]" />
+                <SiWebflow className="h-5 w-5 md:h-14 md:w-14 xl:h-16 xl:w-16 text-[#F9C578]" />
             </motion.div>
             <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
             >
-                <IoLogoReact className="h-5 w-5 md:h-14 md:w-14 text-[#F9C578]" />
+                <IoLogoReact className="h-5 w-5 md:h-14 md:w-14 xl:h-16 xl:w-16 text-[#F9C578]" />
             </motion.div>
             <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
             >
-                <SiShopify className="h-5 w-5 md:h-14 md:w-14 text-[#F9C578]" />
+                <SiShopify className="h-5 w-5 md:h-14 md:w-14 xl:h-16 xl:w-16 text-[#F9C578]" />
             </motion.div>
             <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
             >
-                <IoLogoJavascript className="h-5 w-5 md:h-14 md:w-14 text-[#F9C578]" />
+                <IoLogoJavascript className="h-5 w-5 md:h-14 md:w-14 xl:h-16 xl:w-16 text-[#F9C578]" />
             </motion.div>
             <motion.div
                 initial={{ opacity: 0, y: 10 }}
