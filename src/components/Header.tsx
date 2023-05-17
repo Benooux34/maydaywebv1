@@ -18,7 +18,7 @@ function Header() {
                 <span className={`${pd.className}`}>Web</span>
             </div>
         </Link>
-        <div className='flex items-center justify-center text-white text-[0.7vw] font-bold space-x-14'>
+        <div className='flex items-center justify-center text-white text-[14px] font-bold space-x-14'>
             <Link className='hidden lg:flex' href="./">
                 <span>Accueil</span>            
             </Link>
@@ -30,7 +30,7 @@ function Header() {
             </Link>
             <Link href="/contact">
                 <div className='flex items-center justify-center bg-[#F9C578] text-[#0D5B5F] rounded-full px-4 py-1'>
-                    <span className='text-[12px] lg:text-[0.7vw] font-bold'>Contact</span>
+                    <span className='text-[12px] lg:text-[14px] font-bold'>Contact</span>
                     <FiArrowUpRight className='h-[17px] w-[17px]' />
                 </div>
             </Link>
