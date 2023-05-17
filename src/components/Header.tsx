@@ -11,7 +11,7 @@ const pd = Playfair_Display({ subsets: ['latin'] })
 
 function Header() {
   return (
-    <header className="fixed top-10 h-[50px] w-[80vw] bg-[#14787cf6] flex items-center justify-between rounded-full px-7 z-50">
+    <header className="fixed top-10 h-[50px] w-[90vw] md:w-[80vw] bg-[#14787cf6] flex items-center justify-between rounded-full px-7 z-50">
         <Link href="./">
             <div className='text-white font-bold space-x-1'>
                 <span>Mayday</span>

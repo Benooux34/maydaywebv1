@@ -23,17 +23,17 @@ function Cards() {
     <section className="h-[200vh] md:h-[70vh] w-full flex items-center justify-center -mt-20 mb-20">
         <div className="h-full w-full flex flex-col md:flex-row items-center justify-center space-x-0 md:space-x-10 lg:space-x-20 space-y-10 md:space-y-0 mx-10 xl:mx-[8%]">
             <motion.div 
-                className="bg-[#14787C] h-full w-[80%] md:w-1/3 rounded-xl"
+                className="bg-[#14787C] h-full w-[90%] md:w-1/3 rounded-xl"
                 initial={{ y: "12%" }}
             />
 
             <motion.div 
-                className="bg-[#14787C] h-full w-[80%] md:w-1/3 rounded-xl"
+                className="bg-[#14787C] h-full w-[90%] md:w-1/3 rounded-xl"
                 animate={scroll ? { y: "12%" } : { y: count }}
             />
 
             <motion.div 
-                className="bg-[#14787C] h-full w-[80%] md:w-1/3 rounded-xl"
+                className="bg-[#14787C] h-full w-[90%] md:w-1/3 rounded-xl"
                 initial={{ y: "12%" }}
             />        
         </div>

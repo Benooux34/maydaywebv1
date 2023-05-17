@@ -15,9 +15,8 @@ const pd = Playfair_Display({ subsets: ['latin'] })
 function Slider() {
   return (
     <section className='flex flex-col items-center justify-center mx-5 md:mx-[5%] my-[5%]'>
-        <div className='flex items-center justify-center space-x-1 md:space-x-2'>
-            <h2 className='text-white text-md md:text-3xl'>Ce que nous utilisons</h2>
-            <span className={`text-[#F9C578] text-md md:text-3xl ${pd.className}`}>(Langages, Plateformes, ...)</span>
+        <div className='flex items-center justify-center text-center'>
+            <h2 className='text-white text-md md:text-3xl'>Ce que nous utilisons <span className={`text-[#F9C578] text-md md:text-3xl ${pd.className}`}>(Langages, Plateformes, ...)</span></h2>
         </div>
 
         <div className='bg-[#14787c] h-[8vh] md:h-[15vh] w-[85vw] flex items-center justify-between mt-[2vh] md:mt-[5vh] rounded-full px-5 sm:px-10 xl:px-20'>
