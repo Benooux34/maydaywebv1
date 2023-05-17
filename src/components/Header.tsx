@@ -30,7 +30,7 @@ function Header() {
             </Link>
             <Link href="/contact">
                 <div className='flex items-center justify-center bg-[#F9C578] text-[#0D5B5F] rounded-full px-4 py-1'>
-                    <span className='text-[12px] lg:text-[0.9vw] font-bold'>Contact</span>
+                    <span className='text-[12px] lg:text-[0.7vw] font-bold'>Contact</span>
                     <FiArrowUpRight className='h-[17px] w-[17px]' />
                 </div>
             </Link>
