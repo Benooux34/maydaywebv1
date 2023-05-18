@@ -1,17 +1,40 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 // Icons
 import { FiArrowUpRight } from 'react-icons/fi'
+// Animation
+import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
 // Fonts
 import { Playfair_Display } from 'next/font/google'
 
 const pd = Playfair_Display({ subsets: ['latin'] })
 
 function Header() {
+
+    const { scrollY } = useScroll()
+    const [previous, setPrevious] = useState<number>(0)
+    const [next, setNext] = useState<number>(0)
+    const [animation, setAnimation] = useState<boolean>(false)
+
+    useMotionValueEvent(scrollY, "change", (latest) => {
+        setNext(latest)
+        setPrevious(next)
+        
+        if (previous < next)
+            setAnimation(true)
+        else if (previous > next)
+            setAnimation(false)
+    })
+
   return (
-    <header className="fixed top-10 h-[50px] w-[90vw] md:w-[80vw] bg-[#14787cf6] flex items-center justify-between rounded-full px-7 z-50">
+    <motion.header 
+        className="fixed top-10 h-[50px] w-[90vw] md:w-[80vw] bg-[#14787cf6] flex items-center justify-between rounded-full px-7 z-50"
+        initial={{ y: "0vh" }}
+        animate={animation ? { y: "-20vh" } : { y: "0vh" }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+    >
         <Link href="./">
             <div className='text-white font-bold space-x-1'>
                 <span>Mayday</span>
@@ -35,7 +58,7 @@ function Header() {
                 </div>
             </Link>
         </div>
-    </header>
+    </motion.header>
   )
 }
 
