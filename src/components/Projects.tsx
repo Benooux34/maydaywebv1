@@ -33,13 +33,13 @@ function Projects() {
             <h2 className={`${inter.className} font-bold text-white text-3xl md:text-5xl`}>Nos Projets</h2>
             <div className='flex items-center justify-center space-x-5'>
                 <div
-                    onClick={count >= 0 ? () => setTimeout(() => setCount(0), 100) : () => setTimeout(() => setCount(count + 15), 100)}                  
+                    onClick={count >= 0 ? () => setTimeout(() => setCount(0), 200) : () => setTimeout(() => setCount(count + 15), 200)}                  
                     className='flex items-center justify-center bg-[#14787C] h-10 w-10 md:h-20 md:w-20 rounded-full cursor-pointer'
                 >
                     <FaArrowLeft className="text-white h-5 w-5 md:h-10 md:w-10" />
                 </div>
                 <div
-                    onClick={count <= -60 ? () => setTimeout(() => setCount(-60), 100) : () => setTimeout(() => setCount(count - 15), 100)}
+                    onClick={count <= -60 ? () => setTimeout(() => setCount(-60), 200) : () => setTimeout(() => setCount(count - 15), 200)}
                     className='flex items-center justify-center bg-[#14787C] h-10 w-10 md:h-20 md:w-20 rounded-full cursor-pointer'
                 >
                     <FaArrowRight className="text-white h-5 w-5 md:h-10 md:w-10" />                    
