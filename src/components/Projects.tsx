@@ -52,7 +52,7 @@ function Projects() {
             className='hidden md:flex w-[200vw] space-x-10 py-10 overflow-hidden pl-[8%]'
             initial={{ x: "0%" }}
             animate={count >= 0 ? { x: "0%" } : { x: `${count}%` }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
+            transition={{ type: "spring", duration: 0.5, stiffness: 100, damping: 20 }}
         >
             {ProjectsData.map((project) => {
                 return (
@@ -82,7 +82,7 @@ function Projects() {
                 dragConstraints={{ right: 0, left: -width }}
                 initial={{ x: "0%" }}
                 animate={count >= 0 ? { x: "0%" } : { x: `${count}%` }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
+                transition={{ type: "spring", duration: 0.5, stiffness: 100, damping: 20 }}
             >
                 {ProjectsData.map((project) => {
                     return (
