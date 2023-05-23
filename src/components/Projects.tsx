@@ -26,6 +26,8 @@ function Projects() {
     useEffect(() => {
         const scrollWidth = ref.current.scrollWidth - ref.current.offsetWidth;
         setWidth(scrollWidth);
+
+        console.log('La valeur de count a été mise à jour :', count);
     }, [count]);
     
   return (
