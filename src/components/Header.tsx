@@ -26,11 +26,13 @@ function Header() {
             setAnimation(true)
         else if (previous > next)
             setAnimation(false)
+        else if (latest < 20)
+            setAnimation(false)
     })
 
   return (
     <motion.header 
-        className="fixed top-10 h-[50px] w-[90vw] md:w-[80vw] bg-[#14787cf6] flex items-center justify-between rounded-full px-7 z-50"
+        className="fixed top-10 h-[50px] w-[90vw] md:w-[85vw] bg-[#14787cf6] flex items-center justify-between rounded-full px-7 z-50"
         initial={{ y: "0vh" }}
         animate={animation ? { y: "-20vh" } : { y: "0vh" }}
         transition={{ duration: 0.5, ease: "easeInOut" }}

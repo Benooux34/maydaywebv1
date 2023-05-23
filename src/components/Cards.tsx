@@ -36,7 +36,7 @@ function Cards() {
                     <button onClick={() => setActive(!active)} className='text-white text-md'>Switch Mode</button>
                 </div>
 
-                <div className='absolute bottom-5 w-full flex items-center justify-center'>
+                <div className='absolute bottom-20 w-full flex items-center justify-center'>
                     {active ?
                         <div className='flex items-center justify-center space-x-4'>
                             <span className='text-[#F9C578] text-2xl md:text-4xl'>19.99€</span>
@@ -48,6 +48,12 @@ function Cards() {
                             <span className='text-white text-lg md:text-xl font-light'>pour 1 site</span>
                         </div>
                     }
+                </div>
+
+                <div className='absolute bottom-5 w-full flex items-center justify-center'>
+                    <button className='bg-transparent hover:bg-[#F9C578] text-[#F9C578] hover:text-[#14787C] text-xl font-semibold border-[3px] border-[#F9C578] px-5 py-2 rounded-lg transition-all'>
+                        En Savoir Plus
+                    </button>
                 </div>
             </motion.div>
                 

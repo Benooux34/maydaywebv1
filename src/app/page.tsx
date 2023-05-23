@@ -7,6 +7,7 @@ import Hero from '@/components/Hero'
 import Cards from '@/components/Cards'
 import Footer from '@/components/Footer'
 import Slider from '@/components/Slider'
+import Projects from '@/components/Projects'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <Cards />
       <Slider />
+      <Projects />
       <Footer />
     </main>
   )
