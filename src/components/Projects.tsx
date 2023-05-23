@@ -20,19 +20,12 @@ const ProjectsData = ProjectsD as unknown as Data[]
 function Projects() {
     const ref = useRef<any>()
 
-    const [count, setCount] = useState<number>(() => {
-        const initialCount = 0;
-        const savedCount = localStorage.getItem('count');
-        return savedCount ? parseInt(savedCount, 10) : initialCount;
-      });
+    const [count, setCount] = useState<number>(0)
     const [width, setWidth] = useState<number>(0)
 
     useEffect(() => {
         const scrollWidth = ref.current.scrollWidth - ref.current.offsetWidth;
         setWidth(scrollWidth);
-
-        if (typeof localStorage !== 'undefined')
-            localStorage.setItem('count', count.toString());
     }, [count]);
     
   return (
