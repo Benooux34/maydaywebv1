@@ -20,12 +20,20 @@ const ProjectsData = ProjectsD as unknown as Data[]
 function Projects() {
     const ref = useRef<any>()
 
-    const [count, setCount] = useState<number>(0)
+    const [count, setCount] = useState<number>(() => {
+        const initialCount = 0;
+        const savedCount = localStorage.getItem('count');
+        return savedCount ? parseInt(savedCount, 10) : initialCount;
+      });
     const [width, setWidth] = useState<number>(0)
 
     useEffect(() => {
-        setWidth(ref.current.scrollWidth - ref.current.offsetWidth)
-    }, [])
+        const scrollWidth = ref.current.scrollWidth - ref.current.offsetWidth;
+        setWidth(scrollWidth);
+
+        if (typeof localStorage !== 'undefined')
+            localStorage.setItem('count', count.toString());
+    }, [count]);
     
   return (
     <section className="h-[65vh] md:h-[80vh] w-full pt-10 overflow-hidden">
