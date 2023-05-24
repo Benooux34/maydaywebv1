@@ -3,24 +3,28 @@
         "id": "1",
         "name": "Mayday Studio",
         "img": "/projects/bg-ms.png",
+        "langage": "Next Js",
         "lien": "https://www.mayday-studio.com/"
     },
     {
         "id": "2",
         "name": "Terpenes Brothers",
         "img": "/projects/bg-tb.webp",
+        "langage": "Wordpress",
         "lien": "https://terpenesbrothers.com/"
     },
     {
         "id": "3",
         "name": "Rozoy Picot",
         "img": "/projects/bg-rp.webp",
+        "langage": "Wordpress",
         "lien": "https://www.rozoy-picot.com/"
     },
     {
         "id": "4",
         "name": "Enduro Proof",
         "img": "/projects/bg-ep.webp",
+        "langage": "Wordpress",
         "lien": "https://www.enduroproof.com"
     }
 ]

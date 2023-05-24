@@ -44,14 +44,11 @@ function Header() {
             </div>
         </Link>
         <div className='flex items-center justify-center text-white text-[14px] font-bold space-x-14'>
-            <Link className='hidden lg:flex' href="./">
-                <span>Accueil</span>            
-            </Link>
             <Link className='hidden lg:flex' href="/about">
                 <span>À propos de nous</span>            
             </Link>
             <Link className='hidden lg:flex' href="/projets">
-                <span>Nos projets</span>
+                <span>Nos Tarifs</span>
             </Link>
             <Link href="/contact">
                 <div className='flex items-center justify-center bg-[#F9C578] text-[#0D5B5F] rounded-full px-4 py-1'>

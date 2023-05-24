@@ -20,6 +20,8 @@ const ProjectsData = ProjectsD as unknown as Data[]
 function Projects() {
     const ref = useRef<any>()
 
+    const [hover, setHover] = useState<boolean>(false)
+    const [scaleHover, setScaleHover] = useState<number>(0)
     const [count, setCount] = useState<number>(0)
     const [width, setWidth] = useState<number>(0)
 
@@ -59,10 +61,13 @@ function Projects() {
         >
             {ProjectsData.map((project) => {
                 return (
-                    <motion.div 
+                    <motion.div
                         key={project.id} 
                         className='relative bg-[#14787C] border-2 border-white hover:border-[#F9C578] h-[50vh] w-[40vw] flex items-center justify-center rounded-lg cursor-pointer transition-all'
                         whileHover={{ scale: 1.05 }}
+                        onMouseEnter={() => setScaleHover(project.id)}
+                        onHoverStart={() => setHover(true)}
+                        onHoverEnd={() => setHover(false)}
                     >
                         <Link href={project.lien} target='_blank'>
                             <Image
@@ -72,6 +77,12 @@ function Projects() {
                                 fill
                             />
                         </Link>
+
+                        <div className={hover && scaleHover == project.id ? 'absolute bottom-0 right-0 w-[25%] h-[40px] bg-[#F9C578] transition-all z-50 rounded-tl-md rounded-br-md flex items-center justify-center' : 'absolute bottom-0 right-0 w-[25%] h-[40px] bg-white transition-all z-50 rounded-tl-md rounded-br-md flex items-center justify-center'}>
+                            <span className='text-[#14787C] text-lg font-semibold'>
+                                {project.langage}
+                            </span>
+                        </div>
                     </motion.div>
                 )
             })}
