@@ -3,7 +3,8 @@
 import React, { useState } from 'react'
 // Animation
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
-import Card from './Card'
+// Components
+import CardStart from './pack/CardStart'
 
 function Cards() {
     // Switch Mode
@@ -23,57 +24,28 @@ function Cards() {
     })
 
   return (
-    <section className="h-[200vh] md:h-[90vh] w-full flex items-center justify-center -mt-24 mb-20">
+    <section className="relative h-[200vh] md:h-[90vh] w-full flex items-center justify-center -mt-24 mb-20">
+        <button onClick={() => setActive(!active)} className="absolute top-6 left-20 text-white">salut</button>
         <div className="h-full w-full flex flex-col md:flex-row items-center justify-center space-x-0 md:space-x-10 lg:space-x-20 space-y-10 md:space-y-0 px-10 xl:px-[5%]">
             <motion.div 
-                className="bg-[#eaeaea] h-[100vh] md:h-[90vh] w-[90vw] md:w-[30vw] rounded-xl shadow-xl"
+                className="bg-[#14787c] h-[100vh] md:h-[90vh] w-[90vw] md:w-[30vw] rounded-xl shadow-xl border-2 border-white"
                 initial={{ y: "12%" }}
             >
-                <Card
-                    active={active}
-                    setActive={setActive}
-                    name="Start"
-                    description="Le tarif 'Start' est bla bla bla bla, seb sort ta flute"
-                    price="200"
-                    colorText="black"
-                    colorTextHover="white"
-                    colorButton="black"
-                    colorTextButton="black"
-                />
+                <CardStart active={active} />
             </motion.div>
                 
             <motion.div 
-                className="bg-[#eaeaea] h-[100vh] md:h-[90vh] w-[90vw] md:w-[30vw] rounded-xl shadow-xl"
+                className="bg-[#14787c] h-[100vh] md:h-[90vh] w-[90vw] md:w-[30vw] rounded-xl shadow-xl border-2 border-white"
                 animate={scroll ? { y: "12%" } : { y: count }}
             >
-                <Card
-                    active={active}
-                    setActive={setActive}
-                    name="Premium"
-                    description="Le tarif 'Premium' est bla bla bla bla, seb sort ta flute"
-                    price="500"
-                    colorText="black"
-                    colorTextHover="white"
-                    colorButton="black"
-                    colorTextButton="black"
-                />
+
             </motion.div>
 
             <motion.div 
-                className="bg-[#eaeaea] h-[100vh] md:h-[90vh] w-[90vw] md:w-[30vw] rounded-xl shadow-xl"
+                className="bg-[#14787c] h-[100vh] md:h-[90vh] w-[90vw] md:w-[30vw] rounded-xl shadow-xl border-2 border-white"
                 initial={{ y: "12%" }}
             >
-                <Card
-                    active={active}
-                    setActive={setActive}
-                    name="Advance"
-                    description="Le tarif 'Advance' est bla bla bla bla, seb sort ta flute"
-                    price="1000"
-                    colorText="black"
-                    colorTextHover="white"
-                    colorButton="black"
-                    colorTextButton="black"
-                />
+
             </motion.div>     
         </div>
     </section>
