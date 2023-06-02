@@ -15,7 +15,7 @@ function CardStart({ active }: Props) {
             <h2 className='text-2xl'>Starter Pack <span className={active ? 'text-2xl text-[#F9C578] font-light': 'hidden'}>- GOLD</span></h2>
 
             {active ?
-                <p className='text-[#F9C578] text-5xl font-bold'>19.99€ <span className='text-white text-lg font-bold'>/ mois</span></p>
+                <p className='text-[#F9C578] text-4xl md:text-5xl font-bold'>19.99€ <span className='text-white text-lg font-bold'>/ mois</span></p>
             :
                 <p className='text-white text-5xl font-bold'>200€ <span className='text-gray-200 text-lg font-bold'>/ par site</span></p>
             }
