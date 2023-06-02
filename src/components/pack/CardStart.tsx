@@ -27,15 +27,15 @@ function CardStart({ active }: Props) {
             </div>
             <div className='flex items-left justify-start space-x-3'>
                 <AiOutlineClose className='h-7 w-7 text-red-500' />
-                <p className='text-lg'>Pas d'escorte offerte</p>
+                <p className='text-lg'>Pas d&apos;escorte offerte</p>
             </div>
             <div className='flex items-left justify-start space-x-3'>
                 <AiOutlineClose className='h-7 w-7 text-red-500' />
-                <p className='text-lg'>Pas d'escorte offerte</p>
+                <p className='text-lg'>Pas d&apos;escorte offerte</p>
             </div>
             <div className='flex items-left justify-start space-x-3'>
                 <AiOutlineClose className='h-7 w-7 text-red-500' />
-                <p className='text-lg'>Pas d'escorte offerte</p>
+                <p className='text-lg'>Pas d&apos;escorte offerte</p>
             </div>
         </div>
         <div className='h-[15%] w-full flex flex-col items-left justify-center space-y-3'>
@@ -43,11 +43,11 @@ function CardStart({ active }: Props) {
 
                 {active ?
                     <button className='w-full bg-transparent hover:bg-[#F9C578] border-2 border-[#F9C578] py-2 text-[#F9C578] hover:text-[#14787c] text-xl rounded-lg transition-all'>
-                        Commencer l'aventure
+                        Commencer l&apos;aventure
                     </button>
                 : 
                     <button className='w-full bg-transparent hover:bg-white border-2 border-white py-2 text-white hover:text-[#14787c] text-xl rounded-lg transition-all'>
-                        Commencer l'aventure
+                        Commencer l&apos;aventure
                     </button>
                 }
             </div>

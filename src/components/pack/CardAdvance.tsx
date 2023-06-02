@@ -41,11 +41,11 @@ function CardAdvance({ active }: Props) {
                 <div className='w-full'>
                     {active ?
                         <button className='w-full bg-transparent hover:bg-[#F9C578] border-2 border-[#F9C578] py-2 text-[#F9C578] hover:text-[#14787c] text-xl rounded-lg transition-all'>
-                            Commencer l'aventure
+                            Commencer l&apos;aventure
                         </button>
                     : 
                         <button className='w-full bg-transparent hover:bg-white border-2 border-white py-2 text-white hover:text-[#14787c] text-xl rounded-lg transition-all'>
-                            Commencer l'aventure
+                            Commencer l&apos;aventure
                         </button>
                     }
                 </div>
