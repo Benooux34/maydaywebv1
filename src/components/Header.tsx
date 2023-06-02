@@ -26,7 +26,7 @@ function Header() {
             setAnimation(true)
         else if (previous > next)
             setAnimation(false)
-        else if (latest < 20)
+        else if (latest < 50)
             setAnimation(false)
     })
 
