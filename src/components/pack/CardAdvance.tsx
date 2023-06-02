@@ -11,7 +11,7 @@ interface Props {
 function CardAdvance({ active }: Props) {
     return (
         <div className='h-full w-full flex flex-col items-center justify-around px-10 text-white'>
-            <div className='h-[25%] w-full flex flex-col items-left justify-center space-y-3 border-b border-white'>
+            <div className='h-[27%] w-full flex flex-col items-left justify-center space-y-3 border-b border-white'>
                 <h2 className='text-2xl'>Advance Pack <span className={active ? 'text-2xl text-[#F9C578] font-light': 'hidden'}>- GOLD</span></h2>
                 {active ?
                     <p className='text-[#F9C578] text-5xl font-bold'>249.99€ <span className='text-white text-lg font-bold'>/ mois</span></p>
