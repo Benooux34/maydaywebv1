@@ -19,7 +19,7 @@ function Slider() {
             <h2 className='text-white text-md md:text-3xl'>Ce que nous utilisons <span className={`text-[#F9C578] text-md md:text-3xl ${pd.className}`}>(Langages, Plateformes, ...)</span></h2>
         </div>
 
-        <div className='bg-[#14787c] h-[8vh] md:h-[15vh] w-[85vw] flex items-center justify-between mt-[2vh] md:mt-[5vh] rounded-full px-5 sm:px-10 xl:px-20'>
+        <div className='bg-[#14787c] h-[8vh] md:h-[15vh] w-[90vw] flex items-center justify-between mt-[2vh] md:mt-[5vh] rounded-full px-5 sm:px-10 xl:px-20 border-2 border-white'>
             <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
