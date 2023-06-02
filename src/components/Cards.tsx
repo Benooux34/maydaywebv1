@@ -30,23 +30,23 @@ function Cards() {
         <button onClick={() => setActive(!active)} className="absolute top-0 md:top-6 left-5 md:left-[5%] bg-transparent hover:bg-white text-white hover:text-[#14787c] font-bold border-2 border-white rounded-lg px-4 py-2">
             Abonnement par mois
         </button>
-        <div className="h-[150vh] w-full flex flex-col md:flex-row items-center justify-center space-x-0 md:space-x-10 lg:space-x-20 space-y-10 md:space-y-0 px-10 xl:px-[5%]">
+        <div className="h-full w-full flex flex-col md:flex-row items-center justify-center space-x-0 md:space-x-10 lg:space-x-20 space-y-10 md:space-y-0 px-10 xl:px-[5%]">
             <motion.div 
-                className="bg-[#14787c] h-[80vh] md:h-[90vh] w-[90vw] md:w-[30vw] rounded-xl shadow-xl border-2 border-white"
+                className="bg-[#14787c] h-[33%] md:h-[90vh] w-[90vw] md:w-[30vw] rounded-xl shadow-xl border-2 border-white"
                 initial={{ y: "12%" }}
             >
                 <CardStart active={active} />
             </motion.div>
                 
             <motion.div 
-                className="bg-[#14787c] h-[80vh] md:h-[90vh] w-[90vw] md:w-[30vw] rounded-xl shadow-xl border-2 border-white"
+                className="bg-[#14787c] h-[33%] md:h-[90vh] w-[90vw] md:w-[30vw] rounded-xl shadow-xl border-2 border-white"
                 animate={scroll ? { y: "12%" } : { y: count }}
             >
                 <CardPremium active={active} />
             </motion.div>
 
             <motion.div 
-                className="bg-[#14787c] h-[80vh] md:h-[90vh] w-[90vw] md:w-[30vw] rounded-xl shadow-xl border-2 border-white"
+                className="bg-[#14787c] h-[33%] md:h-[90vh] w-[90vw] md:w-[30vw] rounded-xl shadow-xl border-2 border-white"
                 initial={{ y: "12%" }}
             >
                 <CardAdvance active={active} />
