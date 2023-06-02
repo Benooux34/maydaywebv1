@@ -26,7 +26,7 @@ function Cards() {
     })
 
   return (
-    <section className="relative h-[200vh] md:h-[90vh] w-full flex items-center justify-center -mt-24 mb-20">
+    <section className="h-[200vh] md:h-[90vh] w-full flex items-center justify-center -mt-24 mb-20">
         <button onClick={() => setActive(!active)} className="absolute top-0 md:top-6 left-5 md:left-[5%] bg-transparent hover:bg-white text-white hover:text-[#14787c] font-bold border-2 border-white rounded-lg px-4 py-2">
             Abonnement par mois
         </button>
