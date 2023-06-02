@@ -32,21 +32,21 @@ function Cards() {
         </button>
         <div className="h-full w-full flex flex-col md:flex-row items-center justify-center space-x-0 md:space-x-10 lg:space-x-20 space-y-10 md:space-y-0 px-10 xl:px-[5%]">
             <motion.div 
-                className="bg-[#14787c] h-[100vh] md:h-[90vh] w-[90vw] md:w-[30vw] rounded-xl shadow-xl border-2 border-white"
+                className="bg-[#14787c] h-[80vh] md:h-[90vh] w-[90vw] md:w-[30vw] rounded-xl shadow-xl border-2 border-white"
                 initial={{ y: "12%" }}
             >
                 <CardStart active={active} />
             </motion.div>
                 
             <motion.div 
-                className="bg-[#14787c] h-[100vh] md:h-[90vh] w-[90vw] md:w-[30vw] rounded-xl shadow-xl border-2 border-white"
+                className="bg-[#14787c] h-[80vh] md:h-[90vh] w-[90vw] md:w-[30vw] rounded-xl shadow-xl border-2 border-white"
                 animate={scroll ? { y: "12%" } : { y: count }}
             >
                 <CardPremium active={active} />
             </motion.div>
 
             <motion.div 
-                className="bg-[#14787c] h-[100vh] md:h-[90vh] w-[90vw] md:w-[30vw] rounded-xl shadow-xl border-2 border-white"
+                className="bg-[#14787c] h-[80vh] md:h-[90vh] w-[90vw] md:w-[30vw] rounded-xl shadow-xl border-2 border-white"
                 initial={{ y: "12%" }}
             >
                 <CardAdvance active={active} />
