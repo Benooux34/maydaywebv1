@@ -14,7 +14,7 @@ function CardAdvance({ active }: Props) {
             <div className='h-[27%] w-full flex flex-col items-left justify-center space-y-3 border-b border-white'>
                 <h2 className='text-2xl'>Advance Pack <span className={active ? 'text-2xl text-[#F9C578] font-light': 'hidden'}>- GOLD</span></h2>
                 {active ?
-                    <p className='text-[#F9C578] text-5xl font-bold'>249.99€ <span className='text-white text-lg font-bold'>/ mois</span></p>
+                    <p className='text-[#F9C578] text-4xl font-bold'>249.99€ <span className='text-white text-lg font-bold'>/ mois</span></p>
                 :
                     <p className='text-white text-5xl font-bold'>1000€ <span className='text-gray-200 text-lg font-bold'>/ par site</span></p>
                 }
